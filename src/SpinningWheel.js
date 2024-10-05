@@ -2,12 +2,12 @@ import React, { useState, useEffect } from 'react';
 import { PieChart, Pie, Cell } from 'recharts';
 import { PartyPopper } from 'lucide-react';
 
-// Mock data for participants
+// participants
 const mockData = [
-  { name: "Player 1", deposit: 0.02, color: "#FF69B4" }, // Pink
-  { name: "Player 2", deposit: 0.015, color: "#9370DB" }, // Purple
-  { name: "Player 3", deposit: 0.02, color: "#40E0D0" }, // Turquoise
-  { name: "Player 4", deposit: 0.015, color: "#FFFF00" }, // Yellow
+  { name: "Mr 1", deposit: 0.02, color: "#FF69B4" }, // Pink
+  { name: "Mr 2", deposit: 0.015, color: "#9370DB" }, // Purple
+  { name: "Mr 3", deposit: 0.02, color: "#40E0D0" }, // Turquoise
+  { name: "Mr 4", deposit: 0.015, color: "#FFFF00" }, // Yellow
 ];
 
 // Calculate total and percentages
@@ -70,7 +70,7 @@ const SpinnerWheel = () => {
         {!isSpinning && countdown}
       </div>
 
-      {/* Celebration Animation */}
+      {/* winner picked */}
       {showCelebration && (
         <div className="absolute inset-0 pointer-events-none flex items-center justify-center">
           <div className="animate-bounce">
