@@ -110,7 +110,7 @@ const SpinnerWheel = () => {
             setIsLoading(false);
             setLoadingProgress(0);
             setShowCelebration(false);
-            selectWinner(); // Start spinning immediately after loading
+            selectWinner(); // 
             return 0;
           }
           return prev + 1;
@@ -227,7 +227,7 @@ const SpinnerWheel = () => {
           </span>
         </div>
 
-        {/* Custom Tooltip */}
+        {/* Tooltip */}
         {activeIndex !== null && (
           <CustomTooltip 
             active={true} 
@@ -237,7 +237,6 @@ const SpinnerWheel = () => {
         )}
       </div>
 
-      {/* Removed the spin button as spinning is now automatic */}
     </div>
   );
 };
